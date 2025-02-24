@@ -61,7 +61,7 @@ pipeline{
             }
             steps {
                 sh "rm -rf jenkin-simple-api-robot"
-                sh "git clone ${ROBOT_REPO}"
+                sh "git clone ${ROBOT_REPO} jenkin-simple-api-robot"
             }
         }
 
