@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/is_prime/<int:x>', methods=['GET'])
 def is_prime(x):
-    if x <= 1:
+    if x <= 2:
         return 'false'
     for i in range(2, int(x**0.5) + 1):
         if x % i == 0:
